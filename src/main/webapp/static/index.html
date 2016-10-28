@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+
+		<link rel ="stylesheet" href="css/userDB.css"/>
+</head>
+<body>
+	<header>Header</header>
+	<div id="main">
+		<div id="left">
+			<select id="leftUserList" size="15">
+			</select>
+		</div>
+		<div id="right">
+			<div id="topRight">
+			<div id="editUser" class="userButton fa fa-edit"></div>
+			<div id="saveUser" id="saveUser" class="userButton fa fa-floppy-o btnDisabled"></div>
+			<div id="cancelUserEdit" id="cancelUserEdit" class="userButton fa fa-undo btnEnabled"></div>
+			<div id="deleteUser" id="deleteUser" class="userButton fa fa-trash-o"></div> <br>
+				<table>
+					<tr>
+						<td>ID:</td>
+						<td><input type="text" id="id" readonly></td>	
+					</tr>
+					<tr>
+						<td>Firstname:</td>
+						<td><input type="text" id="firstName" readonly></td>	
+					</tr>
+					<tr>
+						<td>Lastname:</td>
+						<td><input type="text" id="lastName" readonly></td>	
+					</tr>
+					<tr>
+						<td>Registered:</td>
+						<td><input type="checkbox" id="registered" readonly disabled></td>	
+					</tr>
+					<tr>
+						<td>Date of Birth:</td>
+						<td><input type="text" id="dateOfBirth" readonly></td>	
+					</tr>
+				</table>
+			</div>
+			<div id="bottomRight">
+				<button id="addTransaction"> + </button>
+				<table id="bottomRightTransactions">
+				
+				</table>
+				
+				
+			</div>
+		</div>
+
+	</div>
+	<div id="dlgAddTransaction" class="dlg">
+		Description:<input type="text" id="dlgDescription"><br>
+		Date:<input type="text" id="dlgTransactionDate"><br>
+		Amount:<input type="text" id="dlgAmount"><br>
+	</div>
+	<div id="dlgConfirm" class="dlg">
+	Are you sure you want to delete?
+	</div>
+	
+	
+<footer>
+<div id="statusMessage">
+</div>
+</footer>
+<!--  <h1>Index.html</h1>
+<img src="images/hello.png" width="100"/>
+
+<i class="fa fa-save"></i>
+
+<div id="dlg">
+Press OK
+</div> -->
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="js/functions.js"></script>
+</html>
